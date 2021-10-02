@@ -1,7 +1,9 @@
 
 
 function buildList(){
-    getCompetitors()
+    let data = getCompetitors();
+
+    console.log(data)
 }
 
 function getCompetitors(){

@@ -21,7 +21,7 @@ router.get('/api/competitors', async (req,res) => {
     } catch (err) {
         res.status(400).json(err)
     }
-})
+}) 
 
 router.post('/api/competitor', async (req, res) => {
     try {

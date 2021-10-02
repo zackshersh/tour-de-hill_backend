@@ -7,7 +7,7 @@ const Competitor = require('../models/Competitor')
 
 router.get('/', (req,res) => {
     console.log('yes')
-    res.sendFile(path.join(__dirname,'./yeah.html'))
+    res.sendFile(path.join(__dirname,'../public/index.html'))
 })
 
 router.post('/api/signup', async (req, res) => {

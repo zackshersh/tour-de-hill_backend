@@ -1,7 +1,7 @@
 
 
-function buildList(){
-    let data = getCompetitors();
+async function buildList(){
+    let data = await getCompetitors();
 
     console.log(data)
 }

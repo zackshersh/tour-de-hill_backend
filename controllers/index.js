@@ -24,13 +24,13 @@ router.get('/api/competitors', async (req,res) => {
 }) 
 
 router.post('/api/competitor', async (req, res) => {
+    console.log(req.body)
     try {
         const compData = await Competitor.create({
             first_name: req.body.first_name,
             last_name: req.body.last_name,
             own_bike: req.body.own_bike
         });
-        console.log(req.body)
         res.status(200).json(compData)
     } catch (err) {
         res.status(400).json(err)

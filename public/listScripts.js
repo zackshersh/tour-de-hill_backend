@@ -27,6 +27,7 @@ async function getCompetitors(){
 function buildCard(id,firstName,lastName,ownBike,createdAt){
     console.log('starting cont')
     let cont = document.createElement('div');
+    cont.classList.add('compCard')
     let s = cont.style
 
     s.margin = '4px';

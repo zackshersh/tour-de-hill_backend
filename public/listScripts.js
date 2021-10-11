@@ -8,7 +8,7 @@ async function buildList(){
 
 async function getCompetitors(){
     fetch('https://tour-de-hill.herokuapp.com/api/competitors')
-    .then(response => response.json());
+    .then(response => response.json())
     .then(data => {
         console.log(data)
         return data;

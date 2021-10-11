@@ -216,7 +216,8 @@ canvas {
 
 .page-5 {
     background-color: white;
-    padding: 24px
+    padding: 24px;
+    padding-top: 48px
 }
 
 .page-5 > h3 {
@@ -241,6 +242,7 @@ form > input {
     text-align: center;
     padding: 12px 24px 12px 24px;
     border: 2px solid black;
+    font-size: 14px;
 }
 
 #own-bike-cont>p:nth-child(2){
@@ -255,6 +257,11 @@ form > input {
     padding: 12px 24px 12px 24px;
     margin-top: 8px;
     text-align: center
+}
+
+.chosen {
+    background-color: black;
+    color: white
 }
 
 

@@ -37,7 +37,7 @@ function buildCard(id,firstName,lastName,ownBike,createdAt){
 
     let idElem = document.createElement('p');
     idElem.textContent = id;
-    cont.appendChild(idelem)
+    cont.appendChild(idElem)
 
     let name = document.createElement('p');
     name.textContent = firstName + " " + lastName;

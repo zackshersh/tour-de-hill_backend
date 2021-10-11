@@ -52,11 +52,11 @@ const submit = () => {
         own_bike: ownBike
     }
 
-    console.log(data)
+    console.log(JSON.stringify(data))
 
     fetch('https://tour-de-hill.herokuapp.com/api/competitor', {
         method: 'POST',
-        mode: 'no-cors',
+        mode: 'same-origin',
         headers: {
             'Content-Type': 'application/json'
         },

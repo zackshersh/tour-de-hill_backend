@@ -54,6 +54,8 @@ function buildCard(id,firstName,lastName,ownBike,createdAt){
     time.style.fontSize = "8px";
     cont.append(time)
 
+    console.log(cont)
+
 
     return cont
 

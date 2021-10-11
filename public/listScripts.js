@@ -1,12 +1,16 @@
 
 
 async function buildList(){
-    let data = await getCompetitors();
-
-    data.forEach(c => {
-        let card = buildCard(c.id,c.first_name,c.last_name,c.own_bike,c.createdAt);
-        document.querySelector('#cont').appendChild(card)
+    getCompetitors().then(competitors => {
+        console.log(competitors)
+        competitors.forEach(c => {
+            let card = buildCard(c.id,c.first_name,c.last_name,c.own_bike,c.createdAt);
+            document.querySelector('#cont').appendChild(card)
+        })
     })
+
+
+
 }
 
 async function getCompetitors(){

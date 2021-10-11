@@ -8,12 +8,11 @@ async function buildList(){
 
 async function getCompetitors(){
     fetch('https://tour-de-hill.herokuapp.com/api/competitors')
-        .then(async (res) => {
-            let data = res.json()
-            console.log(res)
-            console.log(data[0]);
-            return data;
-        })
+    .then(response => response.json());
+    .then(data => {
+        console.log(data)
+        return data;
+    })
 }
 
 

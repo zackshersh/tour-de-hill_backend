@@ -11,7 +11,7 @@ async function getCompetitors(){
         .then(async (res) => {
             let data = res.json()
             console.log(res)
-            console.log(data);
+            console.log(data[0]);
             return data;
         })
 }

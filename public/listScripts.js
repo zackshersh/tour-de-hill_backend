@@ -4,7 +4,9 @@ async function buildList(competitors){
     competitors => {
         console.log(competitors)
         competitors.forEach(c => {
+            console.log(c)
             let card = buildCard(c.id,c.first_name,c.last_name,c.own_bike,c.createdAt);
+            console.log(card)
             document.querySelector('#cont').appendChild(card)
         })
     }
@@ -24,6 +26,7 @@ async function getCompetitors(){
 }
 
 function buildCard(id,firstName,lastName,ownBike,createdAt){
+    console.log('starting cont')
     let cont = document.createElement('div');
     let s = cont.style
 

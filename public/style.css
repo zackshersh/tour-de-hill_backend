@@ -343,6 +343,13 @@ form > input {
     margin: 8px 0px 8px 0px;
 }
 
+#failure-cont {
+    padding: 24px;
+    background-color: rgb(255, 70, 70);
+    margin: 12px -24px 12px -24px;
+}
+
+
 .hidden {
     display: none;
 }

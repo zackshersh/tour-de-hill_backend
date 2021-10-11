@@ -68,6 +68,9 @@ const submit = () => {
             document.querySelector('#register-cont').classList.add('hidden');
             document.querySelector('#success-cont').classList.remove('hidden');
             document.querySelector('.page-5').style.paddingTop = '0px'
+        } else {
+            document.querySelector('#failure-cont').classList.remove('hidden');
+
         }
         console.log(data)
     })

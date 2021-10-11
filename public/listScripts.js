@@ -1,13 +1,13 @@
 
 
-async function buildList(){
-    getCompetitors().then(competitors => {
+async function buildList(competitors){
+    competitors => {
         console.log(competitors)
         competitors.forEach(c => {
             let card = buildCard(c.id,c.first_name,c.last_name,c.own_bike,c.createdAt);
             document.querySelector('#cont').appendChild(card)
         })
-    })
+    }
 
 
 
@@ -18,6 +18,7 @@ async function getCompetitors(){
     .then(response => response.json())
     .then(data => {
         console.log(data)
+        buildList(data)
         return data;
     })
 }
@@ -61,4 +62,5 @@ function buildCard(id,firstName,lastName,ownBike,createdAt){
 
 
 
-buildList()
+// buildList()
+getCompetitors()

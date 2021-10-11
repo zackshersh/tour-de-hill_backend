@@ -1,15 +1,14 @@
 
 
 async function buildList(competitors){
-    competitors => {
-        console.log(competitors)
-        competitors.forEach(c => {
-            console.log(c)
-            let card = buildCard(c.id,c.first_name,c.last_name,c.own_bike,c.createdAt);
-            console.log(card)
-            document.querySelector('#cont').appendChild(card)
-        })
-    }
+    console.log(competitors)
+    competitors.forEach(c => {
+        console.log(c)
+        let card = buildCard(c.id,c.first_name,c.last_name,c.own_bike,c.createdAt);
+        console.log(card)
+        document.querySelector('#cont').appendChild(card)
+    })
+
 
 
 

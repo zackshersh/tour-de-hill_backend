@@ -35,11 +35,11 @@ function buildCard(id,firstName,lastName,ownBike,createdAt){
 
     let idElem = document.createElement('p');
     idElem.textContent = id;
-    s.appendChild(idelem)
+    cont.appendChild(idelem)
 
     let name = document.createElement('p');
     name.textContent = firstName + " " + lastName;
-    s.appendChild(name);
+    cont.appendChild(name);
 
     let bike = document.createElement('p')
     if(ownBike){
@@ -47,13 +47,13 @@ function buildCard(id,firstName,lastName,ownBike,createdAt){
     } else {
         bike.textContent = "Tar Heel Bike"
     }
-    s.appendChild(bike);
+    cont.appendChild(bike);
 
     let time = document.createElement('p');
     time.textContent = createdAt;
     time.style.fontSize = "8px";
-    s.append(time)
-    
+    cont.append(time)
+
 
     return cont
 

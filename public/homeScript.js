@@ -64,6 +64,10 @@ const submit = () => {
     })
     .then(response => response.json())
     .then(data => {
+        if(data){
+            document.querySelector('#register-cont').classList.add('hidden')
+            document.querySelector('#success-cont').classList.remove('hidden')
+        }
         console.log(data)
     })
 }

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tour De Hill</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="page title-page">
         <div class="cont pretitle-cont">
-            <h2>Saturday,<br>October 9th</h2>
+            <h2>2pm Saturday,<br>October 9th</h2>
         </div>
         <img src="assets/monkey-2.png">
         <div class="cont title-cont">
@@ -20,6 +20,7 @@
         </div>
     </div>
     <div class="page page-2">
+
         <h4>The <i>Tour De Hill</i> is a bike race through the mean streets, sidewalks and corners of the University of North Carolina at Chapel Hill.</h4>
         <p>Competitors will all begin at the starting line and then must reach the two checkpoints in order.</p>
         <p>There is no defined route for the race. <u>Participants may follow whatever route they feel is fastest.</u></p>
@@ -57,17 +58,32 @@
         <p>There is a Tar Heel Bike hub located at SASB. A map can be found with all bike hubs and how many bikes they have <a href="https://ridegotcha.com/location/unc/">here</a></p>
     </div>
     <div class="page page-5">
-        <h3>Registration</h3>
-        <form>
-            <input placeholder="First Name" id="first-name">
-            <input placeholder="Last Name" id="last-name">
-
-            <div id="own-bike-cont">
-                <p id="own" class="choice chosen">Own Bike</p>
-                <p id="heel" class="choice">Tar Heel Bike</p>
+        <div id="register-cont">
+            <h3>Registration</h3>
+            <form>
+                <input placeholder="First Name" id="first-name">
+                <input placeholder="Last Name" id="last-name">
+    
+                <div id="own-bike-cont">
+                    <p id="own" class="choice chosen">Own Bike</p>
+                    <p id="heel" class="choice">Tar Heel Bike</p>
+                </div>
+                <p id="register-button">Register!</p>
+            </form>
+        </div>
+        <div id="success-cont">
+            <h4>Congrats! You're all signed up for the <i>Tour De Hill</i></h4>
+            <div>
+                <p>Please show up ~10 minutes early to sign in and get your number</p>
+                <p><u>Rules To Remember:</u></p>
+                <ul>
+                    <li>Any sort of bumping is prohibited. There will be multiple bikers going through routes not intended for multiple bikers so be sure to give your competitors adequate space.</li>
+                    <li>You may have your mask off for the actual race, but before and during the medal ceremony you must remain masked.</li>
+                    <li>Bike safe! Especially on roads, cars still exist and they can still kill you.</li>
+                </ul>
             </div>
-            <p id="register-button">Register!</p>
-        </form>
+        </div>
+
     </div>
     <canvas></canvas>
 

@@ -143,8 +143,12 @@ canvas {
     padding-top: 48px;
 }
 
+.page-2 > h4 {
+    margin-bottom: 12px;
+}
+
 .page-2 > p {
-    margin-top: 12px;
+    margin-top: 4px
 }
 
 .sub {
@@ -156,11 +160,14 @@ canvas {
 
 .page-3 {
     margin: 0px;
+    margin-top: 36px;
     padding: 0px
 }
 
 .page-3 > h3 {
-    margin: 24px
+    padding: 24px;
+    background-color: black;
+    color: #81b4d6
 }
 
 .stopCont {
@@ -208,6 +215,7 @@ canvas {
 .page-4 {
     padding: 24px;
     padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .page-4 > h4 {
@@ -299,6 +307,10 @@ form > input {
         /* justify-content: flex-start; */
     }
 
+    .title-page > img {
+        width: 50vw
+    }
+
     .title-cont {
         align-items: flex-start;
         justify-self: flex-end;
@@ -310,12 +322,11 @@ form > input {
     }
     
     #tour {
-        font-size: 250px;
-
+        font-size: 360px;
     }
 
     #de-hill {
-        font-size: 170px
+        font-size: 260px
     }
 
     .stopCont > h5 {

@@ -44,7 +44,9 @@ document.querySelectorAll('.choice').forEach(choice => choice.addEventListener('
 
 
 console.log(document.body)
-const submit = () => {
+const submit = (e) => {
+
+    e.preventDefault()
 
     let data = {
         first_name: document.querySelector('#first-name').value,
@@ -78,7 +80,7 @@ const submit = () => {
 
 
 
-document.querySelector('#register-button').addEventListener('mousedown',submit)
+document.querySelector('form').addEventListener('submit',submit)
 
 document.querySelectorAll('input').forEach(input => input.addEventListener('keypress',function(e){
     let id = e.target.id;

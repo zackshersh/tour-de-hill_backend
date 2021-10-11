@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #81b4d6;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 95%;
+    font-family: 'Tomasso';
+    text-transform: uppercase;
+    font-weight: normal;
+
+}
+
+h2 {
+    font-size: 52px;
+    font-family: 'Tomasso';
+    font-weight: 100;
+}
+
+h3 {
+    font-family: 'Tomasso';
+    font-size: 72px;
+}
+
+h4 {
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h4 > i {
+    font-size: 32px;
+}
+
+
+p {
+    font-size: 18px;
+}
+
+i {
+    font-family: 'Tomasso';
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+u {
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+}
+
+p > a {
+    color: #81b4d6;
+    text-decoration: underline;
+    text-decoration-color: #81b4d6;
+    background-color: black;
+    padding: 2px;
+    border-radius: 4px;
+    line-height: 28px;
+}
+
+canvas {
+    position: fixed;
+    top: 0px;
+
+}
+
+.page {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.title-page {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title-page > img {
+    position: absolute;
+    z-index: -1;
+    right: -80px
+}
+
+.cont {
+    padding: 20px
+}
+
+.pretitle-cont {
+    margin-top: 50px;
+}
+
+.pretitle-cont > h2 {
+    margin-top: -10px;
+}
+
+.title-cont {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-cont > h2 {
+    margin-bottom: -20px;
+    align-self: flex-start;
+    padding-left: 20px;
+}
+
+#tour {
+    font-size: 75vw;
+}
+
+#de-hill {
+    margin-top: -30px;
+    font-size: 50vw;
+}
+
+
+
+
+
+.page-2 {
+    padding: 24px;
+    padding-top: 48px;
+}
+
+.page-2 > p {
+    margin-top: 12px;
+}
+
+.sub {
+    font-size: 18px;
+    font-style: italic
+}
+
+
+
+.page-3 {
+    margin: 0px;
+    padding: 0px
+}
+
+.page-3 > h3 {
+    margin: 24px
+}
+
+.stopCont {
+    width: 100vw;
+    min-height: 200px;
+    height: calc(100vw/2);
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding: 24px
+}
+
+.stopCont > h5 {
+    font-family: 'Tomasso';
+    font-size: 60px;
+    color: #81b4d6;
+    /* z-index: 0; */
+}
+
+.stopCont > p {
+    color: #81b4d6;
+}
+
+.stopCont > .info {
+    font-size: 14px;
+    width: 70%;
+    align-self: flex-end;
+    text-align: end;
+    margin-top: 16px;
+}
+
+.stopCont > img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    filter:saturate(0) brightness(0.3);
+    z-index: -1;
+}
+
+
+.page-4 {
+    padding: 24px;
+    padding-top: 48px;
+}
+
+.page-4 > h4 {
+    margin-top: 24px
+}
+
+.page-4 > p {
+    margin-top: 18px;
+}
+
+.page-5 {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Tomasso';
+    src: url('./assets/Tommaso.otf');
+}

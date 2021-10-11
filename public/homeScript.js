@@ -43,7 +43,7 @@ const choiceClick = (e) => {
 document.querySelectorAll('.choice').forEach(choice => choice.addEventListener('mousedown', choiceClick))
 
 
-
+console.log(document.body)
 const submit = () => {
 
     let data = {

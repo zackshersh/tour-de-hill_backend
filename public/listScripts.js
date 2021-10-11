@@ -3,7 +3,10 @@
 async function buildList(){
     let data = await getCompetitors();
 
-    console.log(data)
+    data.forEach(c => {
+        let card = buildCard(c.id,c.first_name,c.last_name,c.own_bike,c.createdAt);
+        document.querySelector('#cont').appendChild(card)
+    })
 }
 
 async function getCompetitors(){
@@ -15,6 +18,42 @@ async function getCompetitors(){
     })
 }
 
+function buildCard(id,firstName,lastName,ownBike,createdAt){
+    let cont = document.createElement('div');
+    let s = cont.style
+
+    s.margin = '4px';
+    s.padding = '12px';
+    s.display = "flex";
+    s.justifyContent = "space-between";
+    s.alignItems = "center"
+
+    let idElem = document.createElement('p');
+    idElem.textContent = id;
+    s.appendChild(idelem)
+
+    let name = document.createElement('p');
+    name.textContent = firstName + " " + lastName;
+    s.appendChild(name);
+
+    let bike = document.createElement('p')
+    if(ownBike){
+        bike.textContent = "Own Bike"
+    } else {
+        bike.textContent = "Tar Heel Bike"
+    }
+    s.appendChild(bike);
+
+    let time = document.createElement('p');
+    time.textContent = createdAt;
+    time.style.fontSize = "8px";
+    s.append(time)
+    
+
+    return cont
+
+
+}
 
 
 

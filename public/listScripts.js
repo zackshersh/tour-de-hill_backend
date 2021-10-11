@@ -30,11 +30,7 @@ function buildCard(id,firstName,lastName,ownBike,createdAt){
     cont.classList.add('compCard')
     let s = cont.style
 
-    s.margin = '4px';
-    s.padding = '12px';
-    s.display = "flex";
-    s.justifyContent = "space-between";
-    s.alignItems = "center"
+    s.borderTop = "1px solid black"
 
     let idElem = document.createElement('p');
     idElem.textContent = id;

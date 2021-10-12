@@ -28,7 +28,7 @@ router.post('/api/competitor', async (req, res) => {
     console.log(req.body)
     console.log('|||||||||||')
 
-    
+
     try {
         const compData = await Competitor.create({
             first_name: req.body.first_name,
@@ -36,7 +36,7 @@ router.post('/api/competitor', async (req, res) => {
             own_bike: req.body.own_bike
         });
         console.log(compData)
-        res.status(200).setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE').json(compData)
+        res.status(200).json(compData)
     } catch (err) {
         res.status(400).json(err)
     }

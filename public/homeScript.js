@@ -56,6 +56,10 @@ const submit = (e) => {
 
     console.log(JSON.stringify(data))
     console.log(window.location.href)
+
+    console.log(window)
+    console.log(self.origin)
+    console.log(self.location)
     fetch('https://tour-de-hill.herokuapp.com/api/competitor', {
         method: 'POST',
         mode: 'cors',

@@ -34,7 +34,8 @@ router.post('/api/competitor', async (req, res) => {
             last_name: req.body.last_name,
             own_bike: req.body.own_bike
         });
-        res.status(200).json(compData)
+        console.log(compData)
+        res.status(200).setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE').json(compData)
     } catch (err) {
         res.status(400).json(err)
     }

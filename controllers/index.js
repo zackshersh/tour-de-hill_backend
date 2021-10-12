@@ -28,6 +28,7 @@ router.post('/api/competitor', async (req, res) => {
     console.log(req.body)
     console.log('|||||||||||')
 
+    
     try {
         const compData = await Competitor.create({
             first_name: req.body.first_name,

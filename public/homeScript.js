@@ -62,7 +62,7 @@ const submit = (e) => {
     console.log(self.location)
     fetch('https://tour-de-hill.herokuapp.com/api/competitor', {
         method: 'POST',
-        mode: 'cors',
+        mode: 'same-origin',
         headers: {
             'Content-Type': 'application/json'
         },

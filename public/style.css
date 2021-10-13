@@ -274,6 +274,13 @@ form > input {
     width: 100%
 }
 
+#register-cont > p {
+    font-size: 14px;
+    max-width: 800px;
+    margin-bottom: 16px;
+    color: red
+}
+
 
 #own-bike-cont {
     width: 100%;
@@ -416,5 +423,9 @@ footer > p {
 
     form > input {
         /* width: 49% */
+    }
+
+    #register-cont > p {
+        display: none
     }
 }

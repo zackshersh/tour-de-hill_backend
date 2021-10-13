@@ -23,6 +23,18 @@ router.get('/api/competitors', async (req,res) => {
     }
 }) 
 
+router.delete('/api/competitors', async (req,res) => {
+    try {
+        const compData = await Competitor.destroy({
+            where: {},
+        })
+
+        res.status(200).json(compData)
+    } catch (err){
+        res.status(400).json(err)
+    }
+})
+
 router.post('/api/competitor', async (req, res) => {
     console.log('|||||||||||')
     console.log(req.body)
@@ -41,5 +53,7 @@ router.post('/api/competitor', async (req, res) => {
         res.status(400).json(err)
     }
 })
+
+
 
 module.exports = router;

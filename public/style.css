@@ -95,7 +95,9 @@ canvas {
 .title-page > img {
     position: absolute;
     z-index: -1;
-    right: -80px
+    right: -80px;
+    max-height: 80vh;
+    max-width: 45vh
 }
 
 .cont {

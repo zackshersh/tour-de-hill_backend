@@ -60,7 +60,7 @@ const submit = (e) => {
     console.log(window)
     console.log(self.origin)
     console.log(self.location)
-    fetch('http://tour-de-hill.herokuapp.com/api/competitor', {
+    fetch('https://tour-de-hill.herokuapp.com/api/competitor', {
         method: 'POST',
         mode: 'same-origin',
         headers: {

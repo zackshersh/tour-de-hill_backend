@@ -1,4 +1,8 @@
 
+// let allCompetitors = []
+
+
+
 
 async function buildList(competitors){
     console.log(competitors)
@@ -19,6 +23,7 @@ async function getCompetitors(){
     .then(response => response.json())
     .then(data => {
         console.log(data)
+        // cmpetitors = data;
         buildList(data)
         return data;
     })

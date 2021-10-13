@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family: 'Tomasso';
+            src: url('./assets/Tommaso.otf');
+        }
+
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Helvetica';
+        }
+
+        h1 {
+            font-size: 190px;
+            font-family: 'Tomasso';
+        }
+
+        h3 {
+            
+        }
+
+        #cont {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bibConts {
+            width: 48vw;
+            height: 48vw;
+
+            border: 1px dotted black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bibConts > div {
+
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bibConts > div > p {
+            text-transform: uppercase;
+            font-style: italic;
+            text-align: center;
+        }
+
+        img {
+            filter: invert(0.2);
+            position: absolute;
+            width: 400px;
+            top: 0px;
+            z-index: -1
+
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+
+    </div>
+    <script src="printScripts.js"></script>
+</body>
+</html>

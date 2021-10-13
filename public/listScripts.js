@@ -46,7 +46,7 @@ function buildCard(id,firstName,lastName,ownBike,createdAt){
         bike.style.color = "rgb(0,100,0)"
     } else {
         bike.textContent = "Tar Heel Bike"
-        bike.style.color = "rgb(100,0,0)"
+        bike.style.color = "rgb(0,0,100)"
     }
     cont.appendChild(bike);
 

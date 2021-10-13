@@ -3,7 +3,7 @@ const path = require('path');
 
 const Competitor = require('../models/Competitor')
 
-
+const timer = require('./timer')
 
 router.get('/', (req,res) => {
     res.sendFile(path.join(__dirname,'../public/index.html'))
@@ -53,6 +53,31 @@ router.post('/api/competitor', async (req, res) => {
         res.status(400).json(err)
     }
 })
+
+
+
+router.get('/api/race/startTime', async (req, res) => {
+    try {
+        console.log('-------')
+        console.log('time started')
+        console.log('-------')
+        timer.start()
+        res.status(200).json({result: true});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
+router.get('/api/race/resetTime', async (req, res) => {
+    try {
+        timer.reset()
+        res.status(200).json({result: true});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
+
 
 
 

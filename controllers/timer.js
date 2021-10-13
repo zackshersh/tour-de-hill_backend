@@ -15,5 +15,5 @@ const timer = {
         this.value = 0;
     }
 }
-
+ 
 module.exports = timer;

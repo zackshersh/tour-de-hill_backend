@@ -5,6 +5,7 @@ const Competitor = require('../models/Competitor')
 
 const timer = require('./timer')
 
+
 router.get('/', (req,res) => {
     res.sendFile(path.join(__dirname,'../public/index.html'))
 })

@@ -21,9 +21,6 @@ Competitor.init(
         },
         own_bike: {
             type: DataTypes.BOOLEAN,
-        },
-        finish_time: {
-            type: DataTypes.FLOAT
         }
     },
     {

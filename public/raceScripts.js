@@ -1,16 +1,16 @@
 
 document.querySelector('#startTime').addEventListener('mousedown',() => {
     clientTimer.start()
-    fetch(`${location.protocol}//tour-de-hill.herokuapp.com/api/race/startTime`)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-        })
+    // fetch(`${location.protocol}//tour-de-hill.herokuapp.com/api/race/startTime`)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log(data);
+    //     })
 })
 
 const clientTimer = {
     value: 0,
-    step: 100,
+    step: 10,
     start(){
         setInterval(() => {
             this.value += this.step;

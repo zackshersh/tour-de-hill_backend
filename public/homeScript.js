@@ -97,3 +97,8 @@ document.querySelectorAll('input').forEach(input => input.addEventListener('keyp
         console.log(lastName)
     }
 }))
+
+
+document.querySelector('#modalX').addEventListener('mousedown',() => {
+    document.querySelectorAll('.modalCont')[0].style.display = 'none'
+})

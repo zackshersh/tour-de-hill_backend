@@ -181,7 +181,8 @@ canvas {
 .page-3 {
     margin: 0px;
     margin-top: 36px;
-    padding: 0px
+    padding: 0px;
+    background-color: black;
 }
 
 .page-3 > h3 {
@@ -211,7 +212,8 @@ canvas {
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    padding: 24px
+    padding: 24px;
+    /* background-color: black; */
 }
 
 .stopCont > h5 {
